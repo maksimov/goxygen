@@ -170,5 +170,17 @@ us a pull request and we'll review it shortly. We also have a
 [Gitter chat](https://gitter.im/goxygen/community) where we discuss
 all the changes.
 
+## How to contribute
+
+### I'm getting an error
+If when running the `init` command you are getting the following error:
+```
+$ go run github.com/shpota/goxygen init my-app
+no required module provides package github.com/shpota/goxygen: working directory is not part of a module
+```
+You will need to set your `GO111MODULE` environment variable to `auto`, you can do it like this:
+```
+export GO111MODULE=auto
+```
 ### Credits
 Goxygen's logo was created by [Egon Elbre](https://twitter.com/egonelbre).
